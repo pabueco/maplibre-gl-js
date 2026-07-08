@@ -295,6 +295,7 @@ export class GlobeTransform implements ITransform {
             tileMercatorCoords: verticalPerspectiveProjectionData.tileMercatorCoords,
             projectionTransition: params.applyGlobeMatrix ? this._globeness : 0,
             fallbackMatrix: mercatorProjectionData.fallbackMatrix,
+            antimeridianClip: verticalPerspectiveProjectionData.antimeridianClip,
         };
     }
 
